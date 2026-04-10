@@ -51,11 +51,11 @@ logs/
 # ============================================================================
 # Data & Models (sensitive files)
 # ============================================================================
-backend/data/clinvar_*.csv
-backend/data/clinvar_indexed/
-backend/data/cache/
-backend/data/cache.db
-backend/data/variant_summary.txt
+data/clinvar_*.csv
+data/clinvar_indexed/
+data/cache/
+data/cache.db
+data/variant_summary.txt
 backend/models/*.pkl
 backend/models/*.pth
 
