@@ -1,0 +1,14 @@
+mutation_id,gene,mutation_type,position,ref_allele,alt_allele,protein_change,clinical_significance,review_status,condition,evidence_summary
+CLV001,TP53,substitution,175,CGC,CAC,R175H,Pathogenic,reviewed by expert panel,Li-Fraumeni syndrome,Common hotspot mutation affecting DNA binding domain. Associated with early-onset cancers.
+CLV002,TP53,substitution,248,CGG,TGG,R248W,Pathogenic,reviewed by expert panel,Multiple cancer predisposition,Critical contact residue mutation. Disrupts p53-DNA interaction.
+CLV003,TP53,substitution,273,CGT,CAT,R273H,Pathogenic,reviewed by expert panel,Hereditary cancer syndrome,Hotspot mutation in DNA binding domain. Loss of tumor suppressor function.
+CLV004,TP53,substitution,282,CGG,TGG,R282W,Pathogenic,criteria provided,Breast and ovarian cancer,Mutation in DNA binding region affecting transactivation.
+CLV005,TP53,deletion,155-159,GACGA,-,frameshift,Pathogenic,criteria provided,Li-Fraumeni syndrome,Frameshift mutation leading to premature stop codon.
+CLV006,TP53,substitution,337,CCC,TCC,P337S,Likely benign,criteria provided,None reported,Polymorphic variant with no evidence of pathogenicity.
+CLV007,TP53,substitution,72,CCG,CCC,P72P,Benign,reviewed by expert panel,None,Silent mutation with no amino acid change.
+CLV008,TP53,substitution,158,CGC,CAC,R158H,Uncertain significance,criteria provided,Unknown,Variant of uncertain clinical significance. Limited population data.
+CLV009,TP53,insertion,200,-,ATG,frameshift,Pathogenic,criteria provided,Colorectal cancer,Insertion causing frameshift and loss of function.
+CLV010,TP53,substitution,245,GGC,AGC,G245S,Pathogenic,reviewed by expert panel,Multiple cancer types,Mutation affecting protein stability and DNA binding.
+CLV011,TP53,substitution,132,AAG,AGG,K132R,Likely benign,criteria provided,None reported,Conservative substitution with preserved function.
+CLV012,TP53,substitution,249,AGG,ATG,R249M,Pathogenic,reviewed by expert panel,Hepatocellular carcinoma,Specific association with aflatoxin exposure.
+CLV013,TP53,deletion,242,TGT,-,frameshift,Pathogenic,criteria provided,Lung cancer,Deletion causing loss of tumor suppressor activity.

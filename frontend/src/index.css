@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: 'IBM Plex Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer base {
+    :root {
+        --background: 42 11% 99%;
+        --foreground: 150 11% 17%;
+        --card: 0 0% 100%;
+        --card-foreground: 150 11% 17%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 150 11% 17%;
+        --primary: 150 22% 39%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 120 15% 91%;
+        --secondary-foreground: 150 22% 28%;
+        --muted: 40 14% 95%;
+        --muted-foreground: 150 10% 54%;
+        --accent: 40 14% 95%;
+        --accent-foreground: 150 11% 17%;
+        --destructive: 8 52% 54%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 40 12% 90%;
+        --input: 40 12% 90%;
+        --ring: 150 22% 39%;
+        --radius: 0.5rem;
+        --chart-1: 150 22% 39%;
+        --chart-2: 28 48% 58%;
+        --chart-3: 8 52% 54%;
+        --chart-4: 150 10% 54%;
+        --chart-5: 40 14% 95%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Work Sans', sans-serif;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
+
+/* Sequence viewer nucleotide colors */
+.nucleotide-a { color: #52745E; }
+.nucleotide-t { color: #C16353; }
+.nucleotide-c { color: #D19B53; }
+.nucleotide-g { color: #5C6560; }
+
+/* Risk badge styles */
+.risk-high {
+    background-color: #F5E6E3;
+    color: #C16353;
+    border: 1px solid #EACCC8;
+}
+
+.risk-moderate {
+    background-color: #FEF3E8;
+    color: #D19B53;
+    border: 1px solid #F5E4CC;
+}
+
+.risk-low {
+    background-color: #E6EBE8;
+    color: #52745E;
+    border: 1px solid #CCD7D1;
+}
+
+/* Mutation highlight in alignment */
+.mutation-highlight {
+    background-color: #F5E6E3;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* Loading animation */
+@keyframes pulse-soft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.animate-pulse-soft {
+    animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
